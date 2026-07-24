@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>今日工作内容</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="title-bar">
+    <span id="title-text">今日工作内容</span>
+    <div id="title-actions">
+      <button id="btn-workmode" title="编辑伪装任务">⚙</button>
+      <button id="btn-pin" title="置顶">📌</button>
+      <button id="btn-close">&times;</button>
+    </div>
+  </div>
+  <div id="tab-bar">
+    <button id="tab-quotes" class="tab-btn active">待办</button>
+    <button id="tab-writing" class="tab-btn">已处理</button>
+  </div>
+  <div id="page-area">
+    <div id="page-quotes" class="page">
+      <div id="quote-category-row">
+        <select id="quote-category-select"></select>
+        <button id="quote-manage-btn" title="管理分类">管理</button>
+      </div>
+      <input id="quote-input" type="text" placeholder="记录素材，按 Enter 添加" autocomplete="off">
+      <div id="quote-list"></div>
+    </div>
+    <div id="page-writing" class="page hidden">
+      <div id="writing-category-row">
+        <select id="writing-category-select"></select>
+        <button id="writing-manage-btn" title="管理分类">管理</button>
+      </div>
+      <textarea id="writing-area" placeholder="写小说、记灵感..."></textarea>
+      <div id="word-count">0 字</div>
+    </div>
+  </div>
+  <div id="bottom-bar">
+    <button id="btn-export">下班</button>
+  </div>
+  <div id="work-mode-view" class="hidden">
+    <div id="work-task-list"></div>
+  </div>
+
+  <script src="../utils/utils.js"></script>
+  <script src="../storage/storage.js"></script>
+  <script src="../export/export.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Pocket Notes",
+  "version": "2.2.0",
+  "description": "轻量、随手记录的浏览器笔记工具",
+  "permissions": ["storage", "downloads"],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "action": {
+    "default_title": "Pocket Notes - 打开笔记"
+  }
+}

@@ -1,0 +1,17 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Claude Code local settings
+.claude/settings.local.json
+.claude/settings.local.*.json
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
